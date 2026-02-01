@@ -1,9 +1,19 @@
+This project focuses on building a deep learning model to classify chest X-ray images into two categories: NORMAL and PNEUMONIA. The model leverages transfer learning by using a pre-trained convolutional neural network (CNN) such as VGG16, which has been trained on a large dataset. The model is then fine-tuned to work specifically with X-ray images for pneumonia detection.
+
+The main goal of the project is to show how transfer learning can be applied to a relatively small medical image dataset, allowing the model to achieve good performance without needing to train the model from scratch. Data augmentation techniques, such as histogram equalization and random transformations, were also used to enhance the model’s generalization capabilities.
+
+Throughout the project, the training and validation losses were monitored to ensure the model was learning effectively, and a confusion matrix was used to evaluate the model’s accuracy and performance on unseen test data.
+
+By the end of the project, the trained model achieved a test accuracy of approximately 77.4%, demonstrating its potential application in healthcare for the early detection of pneumonia based on X-ray images.
+____
+
 ## Part 1: Transfer Learning
 
 ### 1.1. Data Loading and Distribution
 
 ### What We Did:
 In this step, we loaded the dataset from the **train** and **test** directories, which contain images categorized into **NORMAL** (healthy chest X-rays) and **PNEUMONIA** (chest X-rays with pneumonia). We identified the paths for these datasets and counted the number of images in each category for both the training and testing sets.
+![Data](results/data.png)
 
 ### Results:
 - **Training Set:**
